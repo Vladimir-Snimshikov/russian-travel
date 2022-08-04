@@ -1,7 +1,6 @@
 .place {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr;
   column-gap: 40px;
   row-gap: 48px;
   margin-bottom: 80px;
@@ -25,13 +24,8 @@
 
 @media all and (max-width:767px) {
   .place {
-    display: grid;
     grid-template-columns: 1fr;
     row-gap: 32px;
     margin: 0;
-  }
-
-  .place:last-child {
-    margin-bottom: 0;
   }
 }

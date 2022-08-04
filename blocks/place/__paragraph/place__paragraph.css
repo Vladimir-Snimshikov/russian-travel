@@ -1,5 +1,5 @@
 .place__paragraph {
-  width: 484px;
+  max-width: 484px;
   margin: 0;
   padding-bottom: 26px;
   font-weight: 400;
@@ -13,13 +13,13 @@
 
 @media screen and (max-width:1279px) {
   .place__paragraph {
-    width: 456px;
+    max-width: 456px;
   }
 }
 
 @media screen and (max-width:1023px) {
   .place__paragraph {
-    width: 352px;
+    max-width: 352px;
     font-size: 16px;
     padding-bottom: 25px;
   }
@@ -27,6 +27,7 @@
 
 @media all and (max-width:767px) {
   .place__paragraph {
-    width:100%;
+    max-width:calc(100% - 32px);
+    margin: 0 auto;
   }
 }
